@@ -50,7 +50,13 @@ namespace snake
 			}
 		}
 
-		public void Draw()
+        internal void Clear()
+        {
+			sym = ' ';
+			Draw();
+		}
+
+        public void Draw()
 		{
 			Console.SetCursorPosition(x, y);
 			Console.Write(sym);
