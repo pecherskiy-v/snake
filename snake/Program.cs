@@ -16,13 +16,13 @@ namespace snake
 			Point p2 = new Point(4, 5, '#');
 			p2.Draw();
 
-			Console.ReadLine();
-		}
+			HorizontalLine lineH = new HorizontalLine(xleft: 1, xReight: 15, y: 8, sym: '_');
+			VerticalLine lineV = new VerticalLine(1, 15, 1, sym: '|');
 
-		static void Draw(int x, int y, char sym)
-		{
-			Console.SetCursorPosition(x, y);
-			Console.Write(sym);
+			lineH.Drow();
+			lineV.Drow();
+
+			Console.ReadLine();
 		}
 	}
 }
