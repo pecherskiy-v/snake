@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{6833F634-9B0B-46D1-B9C0-87B5BE9A23CC}</ProjectGuid>
+    <ProjectGuid>{1AB88DA7-12E2-476F-8A7B-FC8BC1E392F7}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>snake</RootNamespace>
     <AssemblyName>snake</AssemblyName>
@@ -43,11 +43,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AbstractLine.cs" />
+    <Compile Include="Direction.cs" />
+    <Compile Include="Figure.cs" />
     <Compile Include="HorizontalLine.cs" />
     <Compile Include="Point.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Snake.cs" />
     <Compile Include="VerticalLine.cs" />
   </ItemGroup>
   <ItemGroup>

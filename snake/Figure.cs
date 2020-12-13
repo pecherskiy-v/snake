@@ -6,9 +6,10 @@ using System.Threading.Tasks;
 
 namespace snake
 {
-	class AbstractLine
+	class Figure
 	{
 		protected List<Point> pList;
+
 		public void Drow()
 		{
 			foreach (Point p in pList)
